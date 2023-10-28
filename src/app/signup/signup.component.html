@@ -1,0 +1,14 @@
+<h2>Sign Up</h2>
+<form>
+  <div class="form-group">
+    <label for="newUsername">Username</label>
+    <input type="text" id="newUsername" name="newUsername" [(ngModel)]="newUsername" required>
+  </div>
+  <div class="form-group">
+    <label for="newPassword">Password</label>
+    <input type="password" id="newPassword" name="newPassword" [(ngModel)]="newPassword" required>
+  </div>
+  <button type="submit" (click)="onSignUp()">Sign Up</button>
+</form>
+<p>Belum punya akun? <a routerLink="/login">Sign Up</a></p>
+
